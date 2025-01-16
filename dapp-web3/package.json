@@ -1,0 +1,21 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run ./scripts/deploy.js",
+    "upgrade:EventHub": "CONTRACT_NAME=EventHub npx hardhat run ./scripts/upgrade.js",
+    "upgrade:AdminManagement": "CONTRACT_NAME=AdminManagement npx hardhat run ./scripts/upgrade.js",
+    "upgrade:PropertyManagement": "CONTRACT_NAME=PropertyManagement npx hardhat run ./scripts/upgrade.js",
+    "upgrade:ReviewManagement": "CONTRACT_NAME=ReviewManagement npx hardhat run ./scripts/upgrade.js",
+    "upgrade:DappBnB": "CONTRACT_NAME=DappBnB npx hardhat run ./scripts/upgrade.js",
+    "": "----------------------------------------------------------------------------------------",
+    "copyArtifacts": "npx hardhat run ./scripts/copyArtifacts.js",
+    "local": "npx hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.2.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.6"
+  }
+}

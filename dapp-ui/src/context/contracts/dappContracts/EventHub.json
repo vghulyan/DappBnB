@@ -1,0 +1,384 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "EventHub",
+  "sourceName": "contracts/EventHub.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "ApartmentCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "ApartmentDeleted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "ApartmentUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "tenant",
+          "type": "address"
+        }
+      ],
+      "name": "BookingCheckedIn",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "tenant",
+          "type": "address"
+        }
+      ],
+      "name": "BookingCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "tenant",
+          "type": "address"
+        }
+      ],
+      "name": "BookingRefunded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "FundsClaimed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "aid",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "ReviewAdded",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "emitApartmentCreated",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "emitApartmentDeleted",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "emitApartmentUpdated",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "tenant",
+          "type": "address"
+        }
+      ],
+      "name": "emitBookingCheckedIn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "tenant",
+          "type": "address"
+        }
+      ],
+      "name": "emitBookingCreated",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "tenant",
+          "type": "address"
+        }
+      ],
+      "name": "emitBookingRefunded",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "apartmentId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bookingId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "emitFundsClaimed",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "emitOwnershipTransferred",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "aid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "emitReviewAdded",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610747806100206000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c806395039cf71161006657806395039cf71461011d578063a12a667614610139578063b019b4e814610155578063d9961c2414610171578063f1349c031461018d5761009e565b806336619774146100a35780633d39818c146100bf5780636c601dcc146100db5780638129fc1c146100f75780638427302714610101575b600080fd5b6100bd60048036038101906100b891906104fb565b6101a9565b005b6100d960048036038101906100d491906104fb565b6101e9565b005b6100f560048036038101906100f091906104fb565b610229565b005b6100ff610269565b005b61011b600480360381019061011691906104fb565b6102d3565b005b6101376004803603810190610132919061054e565b610313565b005b610153600480360381019061014e919061054e565b61034d565b005b61016f600480360381019061016a919061057b565b610387565b005b61018b600480360381019061018691906105bb565b6103e5565b005b6101a760048036038101906101a291906104fb565b610422565b005b7f63b2ee9406f5b4de2520627b528758c36b93081ec000b0579013c887b40b45628383836040516101dc93929190610619565b60405180910390a1505050565b7fa2a1dee4425c37116291ab4d233678a915201b947533b0d540def4d8fca8d28f83838360405161021c93929190610619565b60405180910390a1505050565b7f6438ada447b455811454265bf6e46be1570833bbc71c9cbb9a78e7858d750b4f83838360405161025c93929190610619565b60405180910390a1505050565b60008054906101000a900460ff16156102b7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102ae906106ad565b60405180910390fd5b60016000806101000a81548160ff021916908315150217905550565b7f52c68b36af8832ce2eab86015f8b765a1627b38d0f87b39e1875dcec7411e6fb83838360405161030693929190610619565b60405180910390a1505050565b7fae311a095b7d508ae2b2d530d7730fbf65756dfc5cf13fd0d5512ca9612772ec8160405161034291906106cd565b60405180910390a150565b7f9604a06b783db21b6c87acf4f99620b7a3fb396189d556276a9cca793e143fda8160405161037c91906106cd565b60405180910390a150565b8073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b7fe5b2aac85ff06ae0c3be817895a5b16eb8e2c313730e6d600fc7d97152a6ede582826040516104169291906106e8565b60405180910390a15050565b7f8243869dbbd772ad5f2e604003776c1aed5d24be1d6188632ef6c46f627ab89583838360405161045593929190610619565b60405180910390a1505050565b600080fd5b6000819050919050565b61047a81610467565b811461048557600080fd5b50565b60008135905061049781610471565b92915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006104c88261049d565b9050919050565b6104d8816104bd565b81146104e357600080fd5b50565b6000813590506104f5816104cf565b92915050565b60008060006060848603121561051457610513610462565b5b600061052286828701610488565b935050602061053386828701610488565b9250506040610544868287016104e6565b9150509250925092565b60006020828403121561056457610563610462565b5b600061057284828501610488565b91505092915050565b6000806040838503121561059257610591610462565b5b60006105a0858286016104e6565b92505060206105b1858286016104e6565b9150509250929050565b600080604083850312156105d2576105d1610462565b5b60006105e085828601610488565b92505060206105f1858286016104e6565b9150509250929050565b61060481610467565b82525050565b610613816104bd565b82525050565b600060608201905061062e60008301866105fb565b61063b60208301856105fb565b610648604083018461060a565b949350505050565b600082825260208201905092915050565b7f416c726561647920696e697469616c697a656400000000000000000000000000600082015250565b6000610697601383610650565b91506106a282610661565b602082019050919050565b600060208201905081810360008301526106c68161068a565b9050919050565b60006020820190506106e260008301846105fb565b92915050565b60006040820190506106fd60008301856105fb565b61070a602083018461060a565b939250505056fea26469706673582212200af74fe929ddb79aaf9112ee0c851bee91bc1387c764c9438c866f57814bf78a64736f6c63430008180033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061009e5760003560e01c806395039cf71161006657806395039cf71461011d578063a12a667614610139578063b019b4e814610155578063d9961c2414610171578063f1349c031461018d5761009e565b806336619774146100a35780633d39818c146100bf5780636c601dcc146100db5780638129fc1c146100f75780638427302714610101575b600080fd5b6100bd60048036038101906100b891906104fb565b6101a9565b005b6100d960048036038101906100d491906104fb565b6101e9565b005b6100f560048036038101906100f091906104fb565b610229565b005b6100ff610269565b005b61011b600480360381019061011691906104fb565b6102d3565b005b6101376004803603810190610132919061054e565b610313565b005b610153600480360381019061014e919061054e565b61034d565b005b61016f600480360381019061016a919061057b565b610387565b005b61018b600480360381019061018691906105bb565b6103e5565b005b6101a760048036038101906101a291906104fb565b610422565b005b7f63b2ee9406f5b4de2520627b528758c36b93081ec000b0579013c887b40b45628383836040516101dc93929190610619565b60405180910390a1505050565b7fa2a1dee4425c37116291ab4d233678a915201b947533b0d540def4d8fca8d28f83838360405161021c93929190610619565b60405180910390a1505050565b7f6438ada447b455811454265bf6e46be1570833bbc71c9cbb9a78e7858d750b4f83838360405161025c93929190610619565b60405180910390a1505050565b60008054906101000a900460ff16156102b7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102ae906106ad565b60405180910390fd5b60016000806101000a81548160ff021916908315150217905550565b7f52c68b36af8832ce2eab86015f8b765a1627b38d0f87b39e1875dcec7411e6fb83838360405161030693929190610619565b60405180910390a1505050565b7fae311a095b7d508ae2b2d530d7730fbf65756dfc5cf13fd0d5512ca9612772ec8160405161034291906106cd565b60405180910390a150565b7f9604a06b783db21b6c87acf4f99620b7a3fb396189d556276a9cca793e143fda8160405161037c91906106cd565b60405180910390a150565b8073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b7fe5b2aac85ff06ae0c3be817895a5b16eb8e2c313730e6d600fc7d97152a6ede582826040516104169291906106e8565b60405180910390a15050565b7f8243869dbbd772ad5f2e604003776c1aed5d24be1d6188632ef6c46f627ab89583838360405161045593929190610619565b60405180910390a1505050565b600080fd5b6000819050919050565b61047a81610467565b811461048557600080fd5b50565b60008135905061049781610471565b92915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006104c88261049d565b9050919050565b6104d8816104bd565b81146104e357600080fd5b50565b6000813590506104f5816104cf565b92915050565b60008060006060848603121561051457610513610462565b5b600061052286828701610488565b935050602061053386828701610488565b9250506040610544868287016104e6565b9150509250925092565b60006020828403121561056457610563610462565b5b600061057284828501610488565b91505092915050565b6000806040838503121561059257610591610462565b5b60006105a0858286016104e6565b92505060206105b1858286016104e6565b9150509250929050565b600080604083850312156105d2576105d1610462565b5b60006105e085828601610488565b92505060206105f1858286016104e6565b9150509250929050565b61060481610467565b82525050565b610613816104bd565b82525050565b600060608201905061062e60008301866105fb565b61063b60208301856105fb565b610648604083018461060a565b949350505050565b600082825260208201905092915050565b7f416c726561647920696e697469616c697a656400000000000000000000000000600082015250565b6000610697601383610650565b91506106a282610661565b602082019050919050565b600060208201905081810360008301526106c68161068a565b9050919050565b60006020820190506106e260008301846105fb565b92915050565b60006040820190506106fd60008301856105fb565b61070a602083018461060a565b939250505056fea26469706673582212200af74fe929ddb79aaf9112ee0c851bee91bc1387c764c9438c866f57814bf78a64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

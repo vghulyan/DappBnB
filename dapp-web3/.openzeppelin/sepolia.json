@@ -1,0 +1,1232 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xFDC79B407c0852854f9223c1201D9FfDBc592d52",
+      "txHash": "0x8cf531670685df5f8e3540f4ac65f85343bfcc4ef9ddb83a07d3ab6e3763b333",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xeD2f977Ac3A0072274f503357d2f509E50B54546",
+      "txHash": "0x04db904910fc33aa01742c46a81796d274567c47ef02c5e112be577d4941b2f3",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xdDEBB6E06860591e4B6C6D4Af0296417435D0f2E",
+      "txHash": "0x813ec779228f74818239e79c2869293e29bb376c1b88e5e3ae034853848d25e9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3790E5679209808655fd53954db5753Db20056e0",
+      "txHash": "0x07fd018604f3f54192cda4063fdae06021f544d22eaf2842e745e922fd3d4bb9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x12991062b58AD8536421C8Db7218560f2dF7bb1D",
+      "txHash": "0xca9c04f07b7a89a38ca1492f9d5c92c33f1c8aea06e1e487bb67f9abe68983df",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xb579909125045F118A2dbD531785f3170eFb2249",
+      "txHash": "0xf375bd69eaed27c6a733e8aeff6f6faec6ad39a1b5deb979407198ee088ab629",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x40C6361C349f9C9aE5EE67fd14F8579A52d26A4f",
+      "txHash": "0x554b8cbe9d7768b69b8e11ddefd4bffa9b00a18c06921b8c22066b8c5108841a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xE06D12FF72d82F9A93586C5E772A1d9c442869eD",
+      "txHash": "0x918f4a71b1b6f537e1da47b57a28839074287aa954444db40ea8446a51507f8b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xd951446b904F612ef0964f8b5de480065418F756",
+      "txHash": "0x7077b2c1be2d3cf6a3c9a9e2eee2558308d7accce511262628146dbc12f7ac03",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "4f21681a1dc29daf1058bb6eb8ec042cef1bf2bf5e9e01130eae8cf917b5cadb": {
+      "address": "0xfc8D0776534624A47fF3a1c7dec8F6458042Eb03",
+      "txHash": "0x0e38db77ba4a910c02456421a17c923772ba0cf488324db916c02e276451a554",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "EventHub",
+            "src": "contracts/EventHub.sol:5"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "EventHub",
+            "src": "contracts/EventHub.sol:8"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "9d0685bb58d41765c9641f6937a42083ed4d344f84d3d66f6c62547baa3d4449": {
+      "address": "0x266Dc893622384a9f2C94562015A607977ae5Ccc",
+      "txHash": "0x7cd50ace527a7d8aa8b63a01c6bee996767d56da8e32d1ec8817514f156e7a9e",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address_payable",
+            "contract": "AdminManagement",
+            "src": "contracts/AdminManagement.sol:7"
+          },
+          {
+            "label": "initialized",
+            "offset": 20,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "AdminManagement",
+            "src": "contracts/AdminManagement.sol:8"
+          },
+          {
+            "label": "eventHub",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(EventHub)865",
+            "contract": "AdminManagement",
+            "src": "contracts/AdminManagement.sol:10"
+          },
+          {
+            "label": "adminSettings",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_struct(AdminSettings)20_storage",
+            "contract": "AdminManagement",
+            "src": "contracts/AdminManagement.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "AdminManagement",
+            "src": "contracts/AdminManagement.sol:25"
+          }
+        ],
+        "types": {
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(EventHub)865": {
+            "label": "contract EventHub",
+            "numberOfBytes": "20"
+          },
+          "t_struct(AdminSettings)20_storage": {
+            "label": "struct AdminManagement.AdminSettings",
+            "members": [
+              {
+                "label": "pageSize",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "maxImages",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "c27a8dff046bda70c1e22ce23c33723c2ee3c9b27f04a70f00366aa8e2accdec": {
+      "address": "0xd2965BE061ACB05BA73bd8d602a65fAdEefa64c4",
+      "txHash": "0x53f83332a1cfa232c20aa2a000189283e7ad1dab168a2ce11346685afc75f960",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "s",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_struct(PropertyStorage)2013_storage",
+            "contract": "ReviewManagement",
+            "src": "contracts/ReviewManagement.sol:9"
+          },
+          {
+            "label": "initialized",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_bool",
+            "contract": "ReviewManagement",
+            "src": "contracts/ReviewManagement.sol:10"
+          },
+          {
+            "label": "eventHub",
+            "offset": 1,
+            "slot": "8",
+            "type": "t_contract(EventHub)865",
+            "contract": "ReviewManagement",
+            "src": "contracts/ReviewManagement.sol:12"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ReviewManagement",
+            "src": "contracts/ReviewManagement.sol:15"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(BookingStruct)1961_storage)dyn_storage": {
+            "label": "struct PropertyLibrary.BookingStruct[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ReviewStruct)1972_storage)dyn_storage": {
+            "label": "struct PropertyLibrary.ReviewStruct[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(EventHub)865": {
+            "label": "contract EventHub",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(BookingStruct)1961_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct PropertyLibrary.BookingStruct[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(ReviewStruct)1972_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct PropertyLibrary.ReviewStruct[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(uint256 => mapping(uint256 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ApartmentStruct)1946_storage)": {
+            "label": "mapping(uint256 => struct PropertyLibrary.ApartmentStruct)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ApartmentStruct)1946_storage": {
+            "label": "struct PropertyLibrary.ApartmentStruct",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "location",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "imageHashes",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "rooms",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "taxPercent",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "securityFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "booked",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "9"
+              },
+              {
+                "label": "deleted",
+                "type": "t_bool",
+                "offset": 21,
+                "slot": "9"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              }
+            ],
+            "numberOfBytes": "352"
+          },
+          "t_struct(BookingStruct)1961_storage": {
+            "label": "struct PropertyLibrary.BookingStruct",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "aid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "tenant",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "date",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "checked",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "cancelled",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(PropertyStorage)2013_storage": {
+            "label": "struct PropertyLibrary.PropertyStorage",
+            "members": [
+              {
+                "label": "apartments",
+                "type": "t_mapping(t_uint256,t_struct(ApartmentStruct)1946_storage)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "bookingsOf",
+                "type": "t_mapping(t_uint256,t_array(t_struct(BookingStruct)1961_storage)dyn_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "reviewsOf",
+                "type": "t_mapping(t_uint256,t_array(t_struct(ReviewStruct)1972_storage)dyn_storage)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "apartmentExist",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "bookedDates",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isDateBooked",
+                "type": "t_mapping(t_uint256,t_mapping(t_uint256,t_bool))",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "hasBooked",
+                "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "totalApartments",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(ReviewStruct)1972_storage": {
+            "label": "struct PropertyLibrary.ReviewStruct",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "aid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "reviewText",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "4e797584f6492c0dd54b706a61c22dece03fdc83a4c2d2317317d1e43d1a68c8": {
+      "address": "0xDBBC0C8b82AEd6BAf28c1B250dbe3393A8e16413",
+      "txHash": "0xe073f4b5421e75e085d24f006f4bf2f89c650a793a181afe7f7afbef4c70dc2c",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [],
+        "types": {},
+        "namespaces": {}
+      }
+    },
+    "1aa9353a413f1c30f38f2d7c927b3e2dcd9681dc5ba0abd4d87f2a474080757f": {
+      "address": "0xb999021402ff5D14a2d69465e1675Cf94D5a25E6",
+      "txHash": "0xcda3357ee49886e61bea80d17fbdcf1ba8454c216e72d760f5f7af7712a8b51e",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuard",
+            "src": "contracts/utils/ReentrancyGuard.sol:8"
+          },
+          {
+            "label": "s",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_struct(PropertyStorage)2013_storage",
+            "contract": "PropertyManagement",
+            "src": "contracts/PropertyManagement.sol:10"
+          },
+          {
+            "label": "adminManagement",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_contract(AdminManagement)207",
+            "contract": "PropertyManagement",
+            "src": "contracts/PropertyManagement.sol:11"
+          },
+          {
+            "label": "eventHub",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_contract(EventHub)865",
+            "contract": "PropertyManagement",
+            "src": "contracts/PropertyManagement.sol:12"
+          },
+          {
+            "label": "initialized",
+            "offset": 20,
+            "slot": "10",
+            "type": "t_bool",
+            "contract": "PropertyManagement",
+            "src": "contracts/PropertyManagement.sol:13"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "PropertyManagement",
+            "src": "contracts/PropertyManagement.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(BookingStruct)1961_storage)dyn_storage": {
+            "label": "struct PropertyLibrary.BookingStruct[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ReviewStruct)1972_storage)dyn_storage": {
+            "label": "struct PropertyLibrary.ReviewStruct[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AdminManagement)207": {
+            "label": "contract AdminManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(EventHub)865": {
+            "label": "contract EventHub",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(BookingStruct)1961_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct PropertyLibrary.BookingStruct[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(ReviewStruct)1972_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct PropertyLibrary.ReviewStruct[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(uint256 => mapping(uint256 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ApartmentStruct)1946_storage)": {
+            "label": "mapping(uint256 => struct PropertyLibrary.ApartmentStruct)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ApartmentStruct)1946_storage": {
+            "label": "struct PropertyLibrary.ApartmentStruct",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "location",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "imageHashes",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "rooms",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "taxPercent",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "securityFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "booked",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "9"
+              },
+              {
+                "label": "deleted",
+                "type": "t_bool",
+                "offset": 21,
+                "slot": "9"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              }
+            ],
+            "numberOfBytes": "352"
+          },
+          "t_struct(BookingStruct)1961_storage": {
+            "label": "struct PropertyLibrary.BookingStruct",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "aid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "tenant",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "date",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "checked",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "cancelled",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(PropertyStorage)2013_storage": {
+            "label": "struct PropertyLibrary.PropertyStorage",
+            "members": [
+              {
+                "label": "apartments",
+                "type": "t_mapping(t_uint256,t_struct(ApartmentStruct)1946_storage)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "bookingsOf",
+                "type": "t_mapping(t_uint256,t_array(t_struct(BookingStruct)1961_storage)dyn_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "reviewsOf",
+                "type": "t_mapping(t_uint256,t_array(t_struct(ReviewStruct)1972_storage)dyn_storage)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "apartmentExist",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "bookedDates",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isDateBooked",
+                "type": "t_mapping(t_uint256,t_mapping(t_uint256,t_bool))",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "hasBooked",
+                "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "totalApartments",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(ReviewStruct)1972_storage": {
+            "label": "struct PropertyLibrary.ReviewStruct",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "aid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "reviewText",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "6a6dfd90dd52b3dea63b98736760aee5431b15b324ef586abfebe5fba72ddc59": {
+      "address": "0x9C93997650d2c4Fad5f906C058e29A7A1640B6a8",
+      "txHash": "0x45a1250a56a501efc485f62088ce5aae295a34732d6e17c09a264fc352e4bdbf",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "propertyManagement",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(PropertyManagement)1771",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:9"
+          },
+          {
+            "label": "reviewManagement",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(ReviewManagement)1916",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:10"
+          },
+          {
+            "label": "eventHub",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(EventHub)865",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:11"
+          },
+          {
+            "label": "adminManagement",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(AdminManagement)207",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:12"
+          },
+          {
+            "label": "initialized",
+            "offset": 20,
+            "slot": "3",
+            "type": "t_bool",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:13"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:16"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AdminManagement)207": {
+            "label": "contract AdminManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(EventHub)865": {
+            "label": "contract EventHub",
+            "numberOfBytes": "20"
+          },
+          "t_contract(PropertyManagement)1771": {
+            "label": "contract PropertyManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ReviewManagement)1916": {
+            "label": "contract ReviewManagement",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "387ec5830c7882ca02e0a91d7e25fa68b999aee809899f78afdf5cb41ac08402": {
+      "address": "0xd404848bDDb5F548aed99f0359f5F4574678eCC7",
+      "txHash": "0x8112e66e0d21029b36f1c548466a2304b1b55a95a64ac0939161b193ec839a8d",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "propertyManagement",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(PropertyManagement)1782",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:9"
+          },
+          {
+            "label": "reviewManagement",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(ReviewManagement)1927",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:10"
+          },
+          {
+            "label": "eventHub",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(EventHub)876",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:11"
+          },
+          {
+            "label": "adminManagement",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(AdminManagement)207",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:12"
+          },
+          {
+            "label": "initialized",
+            "offset": 20,
+            "slot": "3",
+            "type": "t_bool",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:13"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:16"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AdminManagement)207": {
+            "label": "contract AdminManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(EventHub)876": {
+            "label": "contract EventHub",
+            "numberOfBytes": "20"
+          },
+          "t_contract(PropertyManagement)1782": {
+            "label": "contract PropertyManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ReviewManagement)1927": {
+            "label": "contract ReviewManagement",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "9719a00eb29c4e86258aecf8c03aa44fcb2af8c51a38712899838a91194fb812": {
+      "address": "0xa6FF788dA3e2887F410AB4556a5832b360751069",
+      "txHash": "0x882a1c6dd0f9cd6f926ee5c65a78c19075be58f649441b492ace3e8f61d031e8",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "propertyManagement",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(PropertyManagement)1855",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:9"
+          },
+          {
+            "label": "reviewManagement",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(ReviewManagement)2000",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:10"
+          },
+          {
+            "label": "eventHub",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(EventHub)949",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:11"
+          },
+          {
+            "label": "adminManagement",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(AdminManagement)207",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:12"
+          },
+          {
+            "label": "initialized",
+            "offset": 20,
+            "slot": "3",
+            "type": "t_bool",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:13"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:16"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AdminManagement)207": {
+            "label": "contract AdminManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(EventHub)949": {
+            "label": "contract EventHub",
+            "numberOfBytes": "20"
+          },
+          "t_contract(PropertyManagement)1855": {
+            "label": "contract PropertyManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ReviewManagement)2000": {
+            "label": "contract ReviewManagement",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "105f58064286e381abe7a0e347ec5b3e7aa32d6f38a428cad7400afc86e4502f": {
+      "address": "0x8d75B6fBF1Bd4AEA0358f7f9ac60082DDDa224ae",
+      "txHash": "0x78ff8f98563b45b79c7d5f82b06a5990f9a638067e1d693a99e2d409371a89c8",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "propertyManagement",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(PropertyManagement)1869",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:9"
+          },
+          {
+            "label": "reviewManagement",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(ReviewManagement)2014",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:10"
+          },
+          {
+            "label": "eventHub",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(EventHub)963",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:11"
+          },
+          {
+            "label": "adminManagement",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(AdminManagement)207",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:12"
+          },
+          {
+            "label": "initialized",
+            "offset": 20,
+            "slot": "3",
+            "type": "t_bool",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:13"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "DappBnB",
+            "src": "contracts/DappBnB.sol:16"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AdminManagement)207": {
+            "label": "contract AdminManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(EventHub)963": {
+            "label": "contract EventHub",
+            "numberOfBytes": "20"
+          },
+          "t_contract(PropertyManagement)1869": {
+            "label": "contract PropertyManagement",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ReviewManagement)2014": {
+            "label": "contract ReviewManagement",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
